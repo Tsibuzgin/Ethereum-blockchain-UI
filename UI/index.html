@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladymyr Tsybuzghin YOZH test task UI 06.05.2022</title>
+    <style>
+        * {
+            font-family: Roboto;
+        }
+
+body {
+    padding: 10px;
+}
+
+.container {
+    background-color: lightgrey;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.fees-form {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unclaimed {
+    display: flex;
+    font-size: 40px;
+    color: #323232;
+    font-weight: 700;
+}
+
+.col-fees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: palevioletred;
+    border-radius: 30px;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.collect {
+    display: flex;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+}
+
+.dollar-sign {
+    display: flex;
+    font-family: auto;
+    font-weight: 700;
+    font-size: 70px;
+    color: green;
+    margin: 0;
+}
+
+.price-text {
+    display: flex;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 70px;
+    color: green;
+    margin: 0;
+}
+
+.table {
+    border: 2px solid lightgrey;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: whitesmoke
+}
+
+.usdc,
+.usdt {
+    display: flex;
+    flex-direction: row;
+}
+
+.usdc-left,
+.usdt-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.usdc-img,
+.usdt-img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 25px;
+}
+
+.usdc-text,
+.usdt-text {
+    display: flex;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    color:darkslategray;
+}
+
+.usdc-right,
+.usdt-right {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.usdc-number,
+.usdt-number {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    color:darkslategray;
+    font-family: monospace;
+}
+
+@media (max-width: 620px) {
+    .form-header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .usdc-text,
+    .usdc-number,
+    .usdt-text,
+    .usdt-number {
+        font-size: 20px;
+    }
+    .usdc-img,
+    .usdt-img {
+        margin-top: 1px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 290px) {
+    .col-fees {
+        padding: 20px 30px;
+    }
+}
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="fees-form">
+            <div class="form-header">
+                <p class="unclaimed">
+                    Unclaimed fees
+                </p>
+                <div class="col-fees">
+                <p class="collect">
+                    Collect fees
+                </p>
+                </div>
+            </div>
+            <div class="price">
+                <p class="dollar-sign">
+                    $
+                </p>
+                <p class="price-text">
+                    8.80
+                </p>
+            </div>
+            <div class="table">
+                <div class="usdc">
+                    <div class="usdc-left">
+                    <img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=022" class="usdc-img" alt="usdc-logo">
+                    <p class="usdc-text">
+                        USDC
+                    </p>
+                    </div>
+                    <div class="usdc-right">
+                        <p class="usdc-number">
+                            4.74
+                        </p>
+                    </div>
+                </div>
+                <div class="usdt">
+                    <div class="usdt-left">
+                    <img src="https://www.pikpng.com/pngl/m/345-3451812_tether-usdt-icon-usdt-tether-logo-clipart.png" class="usdt-img" alt="usdt-logo">
+                    <p class="usdt-text">
+                        USDT
+                    </p>
+                    </div>
+                    <div class="usdt-right">
+                        <p class="usdt-number">
+                            4.065
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
