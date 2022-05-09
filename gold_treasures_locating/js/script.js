@@ -1,6 +1,7 @@
-function id (x, y) {
+function solution (x, y) {
     if (x >= 1 && x <= 100000 && y >= 1 && y <= 100000) {
-        return 1 + 0.5*x*(x-1)+0.5*y*(y-1)+x*(y-1); 
+        let q = 1 + 0.5*x*(x-1)+0.5*y*(y-1)+x*(y-1);
+        return q.toString(10);
     } else {
         return 'Error';
     }    
@@ -65,5 +66,5 @@ function id (x, y) {
 // }
 
 //enter your x and y as arguments to id
-console.log(id(7,1).toString(10));
+console.log(solution(6,2).toString(10));
 
